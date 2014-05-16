@@ -10,8 +10,10 @@ var hide_on_load = false; // ID that can be hidden when content has been loaded
 
 function loadFollowing() {
   if (next_data_url=="") {
+    console.log('show pagination');
     $('div.pagination').show();
   } else {
+	console.log('hide pagination');
     is_loading = 1; // note: this will break when the server doesn't respond
     $('div.pagination').hide();
     
@@ -21,6 +23,7 @@ function loadFollowing() {
       next_data_cache = false;
       $.getJSON(next_data_url, function(preview_data) {
         next_data_cache = preview_data;
+		console.log('next_data_cache');
       });
     }
     if (next_data_cache) {
@@ -85,7 +88,7 @@ function initPaginator() {
     // handle scroll events to update content
     var scroll_pos = $(window).scrollTop();
     if (scroll_pos >= 0.9*($(document).height() - $(window).height())) {
-	  console.log('here');
+
       if (is_loading==0) loadFollowing();
     }
     if (scroll_pos <= 0.9*$("#header").height()) {
