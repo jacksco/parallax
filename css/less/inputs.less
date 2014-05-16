@@ -1,0 +1,31 @@
+// Main Form Styling
+.main-form {padding-top:0px;}
+.main-form .checkbox input {margin:-2px 5px 0 0;}
+.main-form .formfield, .main-form .formfielderror {padding:0 0 10px 0;}
+.main-form .formfield input, .main-form .formfield textarea, .main-form .formfield select {.font-size(14px);padding:5px;border:1px #ccc solid;background:@white;font-family:@base-font;color:@darkgrey;width:100%;}
+.main-form .formfielderror input, .main-form .formfielderror textarea, .main-form .formfielderror select {.font-size(14px);padding:5px;border:1px @red solid;background:@white;font-family:@base-font;color:@darkgrey;width:100%;}
+.main-form .formfield.required input:after, .main-form .formfielderror.required input:after, .main-form .formfield.required select:after, .main-form .formfielderror.required select:after {content:"*";}
+.main-form .formfield.gap {margin-top:10px;}
+.main-form p {.font-size(13px);.line-height(13px);}
+.main-form p a {}
+
+.errortext {.font-size(12px);.line-height(14px);color:@red;padding:0 0 5px 0;text-align:right;}
+label {display:inline-block;.font-size(16px);padding:2px 10px 0 0;margin:0px 0 0 0;.line-height(32px);font-weight:normal;}
+input{outline:none;	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */-moz-box-sizing: border-box;    /* Firefox, other Gecko */box-sizing: border-box;/* Opera/IE 8+ */}
+.main-form .formfield input, .main-form .formfielderror input, input[type=text], input[type=password], input[type=email], select {.rounded-corners(0px);padding:10px;margin:0 10px 0 0;border:1px solid @white;.transition(200ms, Ease);}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, #search-input-results:focus {border:1px solid @blue;}
+
+select {outline:none;border:0;}
+select {border:1px solid #ccc;padding-right:27px;background-image:url('');background-repeat:no-repeat;background-position:97% 5px;margin:0 0 5px 0;}
+
+.form-container	{background:#eee;padding:20px;.drop-shadow(0, 1px, 1px, 0.1);}
+.form-container a {color:@blue;}
+.bodytext .form-container p a {border-bottom:1px dotted @blue;}
+.form-container {color:#333;}
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {border:1px solid #ccc;.font-size(14px);width:100%;}
+.form-container .button {background:darken(@blue,8%);}
+.form-container .errortext {.font-size(14px);padding:5px 0 0 0;}
+.form-container .button {margin-top:10px;}
+
+.input {margin-bottom:10px;};
+.input input {width:100%;}

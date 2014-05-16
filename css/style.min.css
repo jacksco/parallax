@@ -1,0 +1,465 @@
+/*
+Version: 1.0
+Author: Jack Stenson
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+}
+html {
+  font-size: 62.5%;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+input.button,
+input.button-full-orange,
+input.button-full {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+img,
+figure {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+video {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  color: #333333;
+  font-family: 'Avenir W02', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  text-align: left;
+}
+h1 {
+  font-family: 'Avenir W02', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-family: 'Avenir W02', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  font-family: 'Avenir W02', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+h4 {
+  font-family: 'Avenir W02', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.bodytext p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+}
+.divide {
+  background: #e2e2e2;
+  width: 100%;
+  height: 400px;
+}
+.content {
+  padding: 40px;
+}
+#container {
+  margin: 0 auto;
+  min-height: 100%;
+  height: 100% !important;
+}
+.banner-1 {
+  width: 100%;
+  height: 768px;
+  background: url('../media/banners/banner-1-small.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 450px;
+  overflow: hidden;
+}
+.banner-2 {
+  width: 100%;
+  height: 768px;
+  background: url('../media/banners/banner-2.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+/* new clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+.main-form {
+  padding-top: 0px;
+}
+.main-form .checkbox input {
+  margin: -2px 5px 0 0;
+}
+.main-form .formfield,
+.main-form .formfielderror {
+  padding: 0 0 10px 0;
+}
+.main-form .formfield input,
+.main-form .formfield textarea,
+.main-form .formfield select {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 5px;
+  border: 1px #ccc solid;
+  background: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  width: 100%;
+}
+.main-form .formfielderror input,
+.main-form .formfielderror textarea,
+.main-form .formfielderror select {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 5px;
+  border: 1px #cc0000 solid;
+  background: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  width: 100%;
+}
+.main-form .formfield.required input:after,
+.main-form .formfielderror.required input:after,
+.main-form .formfield.required select:after,
+.main-form .formfielderror.required select:after {
+  content: "*";
+}
+.main-form .formfield.gap {
+  margin-top: 10px;
+}
+.main-form p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 13px;
+  line-height: 1.3rem;
+}
+.errortext {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 14px;
+  line-height: 1.4rem;
+  color: #cc0000;
+  padding: 0 0 5px 0;
+  text-align: right;
+}
+label {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 2px 10px 0 0;
+  margin: 0px 0 0 0;
+  line-height: 32px;
+  line-height: 3.2rem;
+  font-weight: normal;
+}
+input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+.main-form .formfield input,
+.main-form .formfielderror input,
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  padding: 10px;
+  margin: 0 10px 0 0;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 200ms Ease;
+  -moz-transition: all 200ms Ease;
+  -ms-transition: all 200ms Ease;
+  -o-transition: all 200ms Ease;
+  transition: all 200ms Ease;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+#search-input-results:focus {
+  border: 1px solid #006699;
+}
+select {
+  outline: none;
+  border: 0;
+}
+select {
+  border: 1px solid #ccc;
+  padding-right: 27px;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: 97% 5px;
+  margin: 0 0 5px 0;
+}
+.form-container {
+  background: #eee;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.form-container a {
+  color: #006699;
+}
+.bodytext .form-container p a {
+  border-bottom: 1px dotted #006699;
+}
+.form-container {
+  color: #333;
+}
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=email] {
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-size: 1.4rem;
+  width: 100%;
+}
+.form-container .button {
+  background: #004b70;
+}
+.form-container .errortext {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 5px 0 0 0;
+}
+.form-container .button {
+  margin-top: 10px;
+}
+.input {
+  margin-bottom: 10px;
+}
+.input input {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .banner-1 {
+    background: url('../media/banners/banner-1.jpg') no-repeat;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .banner-1 {
+    background: url('../media/banners/banner-1-medium.jpg') no-repeat;
+  }
+}
+@media only screen and (max-device-width: 960px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}
